@@ -6,7 +6,7 @@ import json
 
 app = Flask(__name__)
 
-STATE_URL = 'http://localhost:17088/'
+STATE_URL = 'http://172.17.0.70:17088/'
 
 def get_count(name):
     with open('data.json', "r+") as dbfile:
