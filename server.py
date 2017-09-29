@@ -26,7 +26,7 @@ def hello():
     print request.method
     if request.method == 'POST':
         req = request.get_json()
-        if req['request']:
+        if 'request' in req:
             name = req['request']
             state = requests.get(STATE_URL).json()
             state_text = state['state']
